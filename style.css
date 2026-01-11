@@ -1,30 +1,34 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
-}
+
+
 .nav-list{
-    height: 4rem;
+    top: 0;
+    height: 5rem;
     width: 100vw;
     display: flex;
     justify-content: start;
-    background-color: #d2d2d2;
+    background: linear-gradient(to right, #03063e, #160e85);
     align-items: center;
+    position: absolute;
     position: fixed;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 1000;
 }
 
+#inicio{
+    padding-top: 5rem;
+}
+
 .div-1{
     height: 100%;
-    width: 20%;
+    width: 30%;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 4rem;
 }
 .div-1 img{
     height: 70%;
@@ -36,20 +40,21 @@ body{
     height: auto;
     width: 60%;
     font-size: 1rem;
-    color: #000000;
+    color: #f1f1f1;
 }
 
 .div-2{
     height: 100%;
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .div-3{
     height: 100%;
-    width: 40%;
-    padding-right: 4rem;
+    width: 30%;
+    padding-right: 2rem;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -65,7 +70,7 @@ body{
 }
 .list-li a{
     text-decoration: none;
-    color: #000000;
+    color: #f1f1f1;
     padding: 15px 20px;
 }
 .list-li a:hover{
@@ -76,7 +81,7 @@ body{
 .list-li a:active{
     background-color: #808080;
     border-radius: 5px;
-    color: #ffffff;
+    color: black;
 }
 
 /* header nav div-3 ul-3 li-3 */
@@ -102,3 +107,181 @@ body{
     border-radius: 50%;
 }
 /*end header nav div-3 ul-3 li-3 */
+/* inicio do banner */
+.banner {
+    background-image: url('./images/banner1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    position: relative
+
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    width: 90%;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6b6b; 
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block; 
+}
+
+.cta-button:hover {
+    background-color: #e64a4a;
+}
+/*fim banner */
+.sections{
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
+}
+/* estylos sections geral */
+.blog-post-1, .blog-post-2, .blog-post-3{
+    background-color:  rgb(255, 255, 255, 0.8);
+    padding-top: 6rem;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: auto;
+}
+/*fim stylos sections geral */
+
+/* começo section minha viagem */
+.blog-post-1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.inserir-numero-voo{
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height:auto;
+    width:40%;
+    text-align: center;
+    gap: 10px;
+}
+.inserir-numero-voo input{
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.inserir-numero-voo a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #160e85;
+    color: #fff;
+    cursor: pointer;
+}
+.inserir-numero-voo a:hover{
+    background-color: #03063e;
+    transition: 0.2s;
+}
+.inserir-numero-voo p{
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* voo status */
+.voo-status{
+    margin-top: 6rem;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    height: 12rem;
+    width: 70%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.informacao-voo{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+}
+
+.dados-voo{
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin-top: 2.5rem;
+}
+.informacao-voo p{
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dados-voo p{
+    width: 25%;
+    text-align: center;
+    
+}
+/* fim minha viagem */
+
+/* fim section minha viagem */
+
+/* começo section nosencontre */
+/* fim section nosencontre */
+
+/* começo section conselhos */
+/* fim section conselhos */
+
