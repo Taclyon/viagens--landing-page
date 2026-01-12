@@ -227,7 +227,6 @@
     color: #555;
     margin-top: 10px;
     box-sizing: border-box;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -250,7 +249,6 @@
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     border-bottom: 1px solid #ccc;
     justify-content: space-between;
@@ -260,7 +258,6 @@
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     margin-top: 2.5rem;
 }
@@ -280,8 +277,181 @@
 /* fim section minha viagem */
 
 /* começo section nosencontre */
+.blog-post-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+   background-image: linear-gradient(rgb(38, 70, 163), lightblue);
+}
+.containner-article{
+    height: 60vh;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.containner-article article{
+    height: 200px;
+    width:200px;
+    justify-content: space-between;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.containner-article article img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 3px 3px 0 0 ;
+}
+
+.containner-article article img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.blog-post-2 p {
+    color: #191b1c;
+    line-height: 1.2;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    border-radius: 3px;
+    margin-top: 2rem;
+
+}
 /* fim section nosencontre */
 
 /* começo section conselhos */
+
+.blog-post-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-image: url('./images/image-jerusalem2.jpg');
+
+    
+}
+.container-conselhos{
+    height: auto;
+    width: 70%;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: #3d3d3d 0 0 30px;
+    border-radius: 5px;
+    background-color: rgb(255,255,255,0.8);
+    
+}
+.container-conselhos section{
+    justify-content: center;
+    margin: 30px;
+
+
+}
+.container-conselhos section h2{
+    color:#024fbd;
+    font-size: 1.4;
+}
+.container-conselhos section h3{
+    color: #024fbd;
+    font-size: 1.1;
+}
+.container-conselhos section p{
+    padding: 5px;
+    line-height: 30px;
+    font-family: sans-serif;
+    color: #141313;
+}
+
+
+
 /* fim section conselhos */
 
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    color: #00bcd4; 
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 1.5;
+    display: block;
+    padding: 5px 0;
+}
+
+.footer-section ul li a:hover {
+    color: #00bcd4;
+    text-decoration: underline;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #00bcd4;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
